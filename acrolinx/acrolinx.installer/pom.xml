@@ -17,7 +17,7 @@
 	<properties>
 	  <url.for.repository.files>https://oss.sonatype.org/content/repositories/snapshots</url.for.repository.files>
       <acrolinx.version>1.0.0-SNAPSHOT</acrolinx.version>
-      <target.path.for.install>${project.build.outputDirectory}/jcr_root/apps/acrolinx-aem-cloud/install</target.path.for.install>
+      <target.path.for.install>${project.build.outputDirectory}/jcr_root/apps/acrolinx-installer/install</target.path.for.install>
 	</properties>
 
 	<build>
