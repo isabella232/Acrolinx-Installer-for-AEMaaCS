@@ -1,4 +1,4 @@
-# Acrolinx-installer-for-AEMaaCS
+# Acrolinx-Installer-for-AEMaaCS
 
 ## Steps for adding Acrolinx to AEM as a Cloud Service
 
