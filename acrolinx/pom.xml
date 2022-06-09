@@ -3,23 +3,33 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
+    <groupId>com.acrolinx.client</groupId>
+    <version>0.0.1-SNAPSHOT</version>
 
     <parent>
-        <groupId>com.acrolinx.client</groupId>
-        <artifactId>aemaacs-acrolinx-project</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <groupId>com.adobe.aem.guides</groupId>
+        <artifactId>aem-guides-wknd</artifactId>
+        <version>1.1.1-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
     <artifactId>aemaacs-acrolinx-project-acrolinx-manager</artifactId>
+
     <packaging>pom</packaging>
     <name>Acrolinx for AEMaaCS - Acrolinx Manager</name>
 
     <properties>
-        <download-maven-plugin.version>1.6.1</download-maven-plugin.version>
+        <download-maven-plugin.version>1.6.8</download-maven-plugin.version>
         <filevault-package-maven-plugin.version>1.0.4</filevault-package-maven-plugin.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <repositories>
+        <repository>
+            <id>maven</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+        </repository>
+    </repositories>
 
     <modules>
         <module>acrolinx.installer</module>
