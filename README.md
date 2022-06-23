@@ -91,6 +91,10 @@ In cloud manager configuration add the following environment variables
 |`ACROLINX_GENERIC_TOKEN`|`secret-token`|secret|| No |
 |`ACROLINX_FORWARD_COOKIES`|`true` or `false`| variable |`false`| Yes |
 
+Example:
+
+![Configuration](assets/configuration.png)
+
 ## (Optional) Configure Acrolinx Access
 
 Refer Acrolinx [documentation](https://docs.acrolinx.com/aem/latest/en/acrolinx-for-adobe-experience-manager-admin-guide#:~:text=Configure%20Acrolinx%20Access) before updating the value.
@@ -98,4 +102,3 @@ Refer Acrolinx [documentation](https://docs.acrolinx.com/aem/latest/en/acrolinx-
 | NAME | VALUE | TYPE | DEFAULT | OPTIONAL |
 |------|-------|------|---------|----------|
 |`ACROLINX_ALLOWED_REGEX`|`wknd-events`| variable | `.*` | Yes |
-
