@@ -1,16 +1,16 @@
 # Acrolinx-Installer-for-AEMaaCS
 
-## Steps for adding Acrolinx to AEM as a Cloud Service
+## Steps for Adding Acrolinx to AEMaaCS
 
 Follow this step-by-step guide to integrate Acrolinx to your existing code repository.
 
-## Adding Acrolinx module
+## Adding the Acrolinx Module
 
 - Create a clone of your Cloud Manager's Git repository.
-- Copy the Acrolinx module from this repository to root directory of the cloud manager code.
+- Copy the Acrolinx module from this repository to the root directory of the cloud manager code.
 - Update  **/acrolinx/pom.xml**
 
-  - Replace the parent pom section with your parent&#39;s pom details, as shown below:
+  - Replace the parent pom section with your parent's pom details, as shown below:
 
   ```xml
   <!-- Replace with your parent project details-->
@@ -51,7 +51,7 @@ Follow this step-by-step guide to integrate Acrolinx to your existing code repos
         <module>it.tests</module>
         <module>dispatcher</module>
         <module>ui.tests</module>
-        <module>acrolinx</module> <!-- Add acrolinx module -->
+        <module>acrolinx</module> <!-- Add the acrolinx module -->
     </modules>
   ```
 
@@ -68,7 +68,7 @@ Follow this step-by-step guide to integrate Acrolinx to your existing code repos
   </dependency>
   ```
 
-  In plugin section of the `all` module under the `filevault-package-maven-plugin` add a `embedded` section similar to other other modules.
+  In plugin section of the `all` module under the `filevault-package-maven-plugin` add a `embedded` section similar to other modules.
 
   ```xml
   <embeddeds>
@@ -83,7 +83,7 @@ Follow this step-by-step guide to integrate Acrolinx to your existing code repos
 
 ## Configure Acrolinx URL and Generic Token
 
-In cloud manager configuration add the following environment variables
+In cloud manager configuration add the following environment variables.
 
 | NAME | VALUE | TYPE | DEFAULT | OPTIONAL |
 |------|-------|------|---------|----------|
@@ -97,7 +97,7 @@ Example:
 
 ## [Optional] Configure Acrolinx Access
 
-Refer Acrolinx [documentation](https://docs.acrolinx.com/aem/latest/en/acrolinx-for-adobe-experience-manager-admin-guide#:~:text=Configure%20Acrolinx%20Access) before updating the value.
+Refer the Acrolinx [documentation](https://docs.acrolinx.com/aem/latest/en/acrolinx-for-adobe-experience-manager-admin-guide#:~:text=Configure%20Acrolinx%20Access) before updating the value.
 
 | NAME | VALUE | TYPE | DEFAULT | OPTIONAL |
 |------|-------|------|---------|----------|
