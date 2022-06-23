@@ -47,7 +47,7 @@
 					<artifactItems>
 						<artifactItem>
 							<groupId>com.acrolinx.client</groupId>
-							<artifactId>acrolinx-aem-cloud.all</artifactId>
+							<artifactId>acrolinx-for-aem.all</artifactId>
 							<version>1.0.0-SNAPSHOT</version>
 							<type>zip</type>
 							<overWrite>true</overWrite>
