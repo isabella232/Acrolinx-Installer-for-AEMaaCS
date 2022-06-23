@@ -95,7 +95,7 @@ Example:
 
 ![Configuration](assets/configuration.png)
 
-## (Optional) Configure Acrolinx Access
+## [Optional] Configure Acrolinx Access
 
 Refer Acrolinx [documentation](https://docs.acrolinx.com/aem/latest/en/acrolinx-for-adobe-experience-manager-admin-guide#:~:text=Configure%20Acrolinx%20Access) before updating the value.
 
