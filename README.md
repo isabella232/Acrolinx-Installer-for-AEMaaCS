@@ -80,3 +80,22 @@ Follow this step-by-step guide to integrate Acrolinx to your existing code repos
     </embedded>
   </embeddeds>
   ```
+
+## Configure Acrolinx URL and Generic Token
+
+In cloud manager configuration add the following environment variables
+
+| NAME | VALUE | TYPE | DEFAULT | OPTIONAL |
+|------|-------|------|---------|----------|
+|`ACROLINX_URL`| `https://<tenant>.acrolinx.cloud`| variable || No |
+|`ACROLINX_GENERIC_TOKEN`|`secret-token`|secret|| No |
+|`ACROLINX_FORWARD_COOKIES`|`true` or `false`| variable |`false`| Yes |
+
+## (Optional)Configure Acrolinx Access
+
+Refer Acrolinx [documentation](https://docs.acrolinx.com/aem/latest/en/acrolinx-for-adobe-experience-manager-admin-guide#:~:text=Configure%20Acrolinx%20Access) before updating the value.
+
+| NAME | VALUE | TYPE | DEFAULT | OPTIONAL |
+|------|-------|------|---------|----------|
+|`ACROLINX_ALLOWED_REGEX`|`wknd-events`| variable | `.*` | Yes |
+
