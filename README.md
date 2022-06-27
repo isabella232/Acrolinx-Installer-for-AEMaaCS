@@ -75,7 +75,7 @@ Refer the Acrolinx [documentation](https://docs.acrolinx.com/aem/latest/en/acrol
 
 | NAME | VALUE | TYPE | DEFAULT | OPTIONAL |
 |------|-------|------|---------|----------|
-|`ACROLINX_ALLOWED_REGEX`|`wknd-events`| variable | `.*` | Yes |
+|`ACROLINX_ALLOWED_REGEX`|`your-site-name`| variable | `.*` | Yes |
 
 ## License
 
