@@ -50,7 +50,7 @@ Follow this step-by-step guide to integrate Acrolinx to your existing code repos
       <groupId>com.acrolinx.client</groupId>
       <artifactId>aemaacs-acrolinx-project-acrolinx-installer</artifactId>
       <type>zip</type>
-      <target>/apps/wknd-packages/application/install</target>
+      <target>/apps/wknd-packages/application/install</target> <!-- Adjust path as per your project-->
     </embedded>
   </embeddeds>
   ```
