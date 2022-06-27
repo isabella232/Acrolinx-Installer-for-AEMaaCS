@@ -10,14 +10,14 @@
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 
-	<artifactId>aemaacs-acrolinx-project-acrolinx-installer</artifactId> 
+	<artifactId>aemaacs-acrolinx-project-acrolinx-installer</artifactId>
+
   	<packaging>content-package</packaging>
 
 	<name>Acrolinx for AEMaaCS - Acrolinx Installer</name>
 
 	<properties>
-	  <url.for.repository.files>https://oss.sonatype.org/content/repositories/snapshots</url.for.repository.files>
-      <acrolinx.version>1.0.0-SNAPSHOT</acrolinx.version>
+      <acrolinx.version>2.0.0-SNAPSHOT</acrolinx.version>
       <target.path.for.install>${project.build.outputDirectory}/jcr_root/apps/acrolinx-installer/install</target.path.for.install>
 	</properties>
 
@@ -29,7 +29,7 @@
 			</resource>
 		</resources>
 		<plugins>
-			<!-- Acrolinx Add-On ZIP File provided by the Maven Artifactory -->
+			<!-- Download Acrolinx Add-On ZIP File provided by the Maven Artifactory -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-dependency-plugin</artifactId>
@@ -48,7 +48,7 @@
 						<artifactItem>
 							<groupId>com.acrolinx.client</groupId>
 							<artifactId>acrolinx-for-aem.all</artifactId>
-							<version>1.0.0-SNAPSHOT</version>
+							<version>${acrolinx.version}</version>
 							<type>zip</type>
 							<overWrite>true</overWrite>
 							<outputDirectory>${target.path.for.install}</outputDirectory>
