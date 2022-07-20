@@ -42,7 +42,7 @@ Follow this step-by-step guide to integrate Acrolinx to your existing code repos
   </dependency>
   ```
 
-  In the plugin section of the `all` module under the `filevault-package-maven-plugin` add a `embedded` section similar to other modules.
+  In the plugin section of the `all` module under the `filevault-package-maven-plugin` add an `embedded` section similar to other modules.
 
   ```xml
   <embeddeds>
