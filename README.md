@@ -31,7 +31,7 @@ Follow this step-by-step guide to integrate Acrolinx to your existing code repos
 
 - Add a dependency to `all` module for acrolinx installer
 
-  In `all` module's pom.xml add:
+  In the `all` module's pom.xml add:
 
   ```xml
   <dependency>
@@ -42,7 +42,7 @@ Follow this step-by-step guide to integrate Acrolinx to your existing code repos
   </dependency>
   ```
 
-  In plugin section of the `all` module under the `filevault-package-maven-plugin` add a `embedded` section similar to other modules.
+  In the plugin section of the `all` module under the `filevault-package-maven-plugin` add an `embedded` section similar to other modules.
 
   ```xml
   <embeddeds>
@@ -64,6 +64,7 @@ In cloud manager configuration add the following environment variables.
 |`ACROLINX_URL`| `https://<tenant>.acrolinx.cloud`| variable || No |
 |`ACROLINX_GENERIC_TOKEN`|`secret-token`|secret|| No |
 |`ACROLINX_FORWARD_COOKIES`|`true` or `false`| variable |`false`| Yes |
+|`ACROLINX_LOG_LEVEL`|`DEBUG`| variable |`INFO`| Yes |
 
 Example:
 
@@ -71,11 +72,24 @@ Example:
 
 ## [Optional] Configure Acrolinx Access
 
-Refer the "Configure Acrolinx Access" section in [documentation](https://docs.acrolinx.com/aem/latest/en/acrolinx-for-adobe-experience-manager-admin-guide) before updating the value.
+Refer the "Configure Acrolinx Access" section in the [documentation](https://docs.acrolinx.com/aem/latest/en/acrolinx-for-adobe-experience-manager-admin-guide) before updating the value.
 
 | NAME | VALUE | TYPE | DEFAULT | OPTIONAL |
 |------|-------|------|---------|----------|
 |`ACROLINX_ALLOWED_REGEX`|`your-site-name`| variable | `.*` | Yes |
+
+## Updating Acrolinx
+
+Update `acrolinx.version` property in **/acrolinx/acrolinx.installer/pom.xml**
+
+Example: `<acrolinx.version>2.0.0</acrolinx.version>`
+
+## Uninstalling Acrolinx
+
+- Remove the Acrolinx module from your cloud project.
+- Remove entries from parent pom.xml in your project.
+- Remove cloud configuration for Acrolinx URL, generic token.
+- Rerun cloud manager pipeline.
 
 ## License
 
