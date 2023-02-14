@@ -93,6 +93,13 @@ Example: `<acrolinx.version>2.0.0</acrolinx.version>`
 - Remove cloud configuration for Acrolinx URL, generic token.
 - Rerun cloud manager pipeline.
 
+## Known Issues
+
+Acrolinx for AEM does not work with Guides 2022.11 or later.
+Guides API is not working as expected, a fix is expected in 2023.02 version of Guides.
+
+Works fine until 2022.10 version of Guides.
+
 ## License
 
 Copyright 2022-present Acrolinx GmbH
