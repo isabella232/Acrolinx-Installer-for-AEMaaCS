@@ -84,7 +84,7 @@ Refer the "Configure Acrolinx Access" section in the [documentation](https://doc
 
 Update `acrolinx.version` property in **/acrolinx/acrolinx.installer/pom.xml**
 
-Example: `<acrolinx.version>2.0.0</acrolinx.version>`
+Example: `<acrolinx.version>2.2.1</acrolinx.version>`
 
 ## Uninstalling Acrolinx
 
@@ -93,12 +93,11 @@ Example: `<acrolinx.version>2.0.0</acrolinx.version>`
 - Remove cloud configuration for Acrolinx URL, generic token.
 - Rerun cloud manager pipeline.
 
-## Known Issues
+## Requirements
 
-Acrolinx for AEM does not work with Guides 2022.11 or later.
-Guides API is not working as expected, a fix is expected in 2023.02 version of Guides.
+AEM Cloud SDK: `2023.5.11983.20230511T173830Z-230200` or above <https://central.sonatype.com/artifact/com.adobe.aem/aem-sdk-api/2023.5.11983.20230511T173830Z-230200>
 
-Works fine until 2022.10 version of Guides.
+Guides for AEM as Cloud Service:  `2023.4.249.` <https://experienceleague.adobe.com/docs/experience-manager-guides-learn/tutorials/release-info/release-notes/cloud-release-notes/2023-releases/release-notes-2023.4.0.html?lang=en>
 
 ## License
 
